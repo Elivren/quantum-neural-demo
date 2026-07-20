@@ -1,2 +1,34 @@
-# quantum-neural-demo
-An experimental project combining quantum computing (Qiskit) with a neural network (TensorFlow) to explore basic Quantum Machine Learning concepts
+# Quantum-Neural Demo
+
+مشروع تعليمي/تجريبي يجمع بين الحوسبة الكمومية والتعلم العميق في نوتبوك واحد.
+
+## المكونات
+
+1. **دائرة كمومية (Qiskit)**: تطبيق بوابة Hadamard على qubit واحد 
+   لإنشاء حالة Superposition، مع تشغيل 1000 محاولة (shots) وعرض 
+   توزيع النتائج.
+
+2. **شبكة عصبية (TensorFlow)**: نموذج Dense مبسّط (3 طبقات) 
+   يُدرَّب على بيانات (بيانات تجريبية عشوائية حالياً) لتوقع تصنيف ثنائي.
+
+3. **قاعدة قرار رمزية**: منطق IF بسيط يحوّل توقع الشبكة العصبية 
+   إلى قرار نهائي (مقبول/مرفوض).
+
+## ⚠️ ملاحظة مهمة
+
+هذا المشروع في مرحلته الحالية **تعليمي بالكامل**:
+- بيانات التدريب عشوائية وليست حقيقية
+- الجزء الكمومي والشبكة العصبية يعملان بشكل مستقل (غير مدمجين فعلياً)
+
+## التشغيل
+
+```bash
+pip install -r requirements.txt
+```
+
+ثم افتح `notebook.ipynb` في Jupyter أو Google Colab.
+
+## خطط مستقبلية
+- [ ] ربط نتائج القياس الكمومي كمدخل حقيقي للشبكة العصبية
+- [ ] استخدام بيانات حقيقية بدل العشوائية
+- [ ] تطبيق حقيقي لـ Quantum Machine Learning (QML)
